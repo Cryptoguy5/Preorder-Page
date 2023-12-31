@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preorder Page</title>
+    <style>
+        body {
+            height: 100vh;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+        }
+
+        .edge {
+            height: 10%;
+            width: 100%;
+        }
+
+        .middle {
+            height: 80%;
+            width: 100%;
+        }
+
+        .section {
+            width: 20%;
+            height: 100%;
+        }
+
+        .section2 {
+            width: 50%;
+            height: 100%;
+        }
+
+        .section3 {
+            width: 30%;
+            height: 100%;
+        }
+
+        .part {
+            height: 100%;
+            width: 50%;
+            
+        }
+
+        .item {
+            width: 50%;
+            height: 100%;
+        }
+
+        .item2 {
+            height: 40%;
+            width: 100%;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        h3, h4{
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        svg {
+            height: 25%;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+        h1, li {
+            text-transform: uppercase;
+        }
+
+        button {
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+            padding: 10px;
+            width: 25%;
+        }
+
+        .background1 {
+            background-image: url(./220228153425-galaxy-book-2-lead.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .plus {
+            width: 10%;
+            background-color: white;
+            margin-bottom: 10%;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        @media(max-width: 680px) {
+
+            body {
+                height: 100%;
+            }
+            h1, h2, h3, h4, p, li{
+                font-size: 12px;
+            }
+
+            li {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .middle {
+                flex-direction: column;
+            }
+
+            svg {
+                height: 20px;
+            }
+
+            .part {
+                width: 100%;
+            }
+
+            .edge {
+                flex-direction: column;
+                align-items: center;
+            }
+            .section2, .section, .section3 {
+                width: 100%;
+            }
+
+            button {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="edge" style="display: flex;">
+          <div class="section flex">
+            <h2>Samsung</h2>
+          </div>
+          <div class="section2 flex">
+            <h3>Mobile</h3>
+            <h3>TV & AV</h3>
+            <h3>Home Appliances</h3>
+            <h3>Computing</h3>
+            <h3>Offers</h3>
+          </div>
+          <div class="section3 flex">
+              <div class="section2 flex">
+                   <h4>Explore</h4>
+                   <h4>Support</h4>
+                   <h4>Business</h4>
+              </div>
+              <div class="section2 flex">
+                <svg class="m" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490.4 490.4" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M484.1,454.796l-110.5-110.6c29.8-36.3,47.6-82.8,47.6-133.4c0-116.3-94.3-210.6-210.6-210.6S0,94.496,0,210.796 s94.3,210.6,210.6,210.6c50.8,0,97.4-18,133.8-48l110.5,110.5c12.9,11.8,25,4.2,29.2,0C492.5,475.596,492.5,463.096,484.1,454.796z M41.1,210.796c0-93.6,75.9-169.5,169.5-169.5s169.6,75.9,169.6,169.5s-75.9,169.5-169.5,169.5S41.1,304.396,41.1,210.796z"></path> </g> </g></svg>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Shopping_Cart_01"> <path id="Vector" d="M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM17 17H9.29395C8.83288 17 8.60193 17 8.41211 16.918C8.24466 16.8456 8.09938 16.7291 7.99354 16.5805C7.8749 16.414 7.82719 16.1913 7.73274 15.7505L5.27148 4.26465C5.17484 3.81363 5.12587 3.58838 5.00586 3.41992C4.90002 3.27135 4.75477 3.15441 4.58732 3.08205C4.39746 3 4.16779 3 3.70653 3H3M6 6H18.8732C19.595 6 19.9555 6 20.1978 6.15036C20.41 6.28206 20.5653 6.48862 20.633 6.729C20.7104 7.00343 20.611 7.34996 20.411 8.04346L19.0264 12.8435C18.9068 13.2581 18.8469 13.465 18.7256 13.6189C18.6185 13.7547 18.4772 13.861 18.317 13.9263C18.1361 14 17.9211 14 17.4921 14H7.73047M8 21C6.89543 21 6 20.1046 6 19C6 17.8954 6.89543 17 8 17C9.10457 17 10 17.8954 10 19C10 20.1046 9.10457 21 8 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+                <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>profile_round [#1342]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -2159.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M100.562548,2016.99998 L87.4381713,2016.99998 C86.7317804,2016.99998 86.2101535,2016.30298 86.4765813,2015.66198 C87.7127655,2012.69798 90.6169306,2010.99998 93.9998492,2010.99998 C97.3837885,2010.99998 100.287954,2012.69798 101.524138,2015.66198 C101.790566,2016.30298 101.268939,2016.99998 100.562548,2016.99998 M89.9166645,2004.99998 C89.9166645,2002.79398 91.7489936,2000.99998 93.9998492,2000.99998 C96.2517256,2000.99998 98.0830339,2002.79398 98.0830339,2004.99998 C98.0830339,2007.20598 96.2517256,2008.99998 93.9998492,2008.99998 C91.7489936,2008.99998 89.9166645,2007.20598 89.9166645,2004.99998 M103.955674,2016.63598 C103.213556,2013.27698 100.892265,2010.79798 97.837022,2009.67298 C99.4560048,2008.39598 100.400241,2006.33098 100.053171,2004.06998 C99.6509769,2001.44698 97.4235996,1999.34798 94.7348224,1999.04198 C91.0232075,1998.61898 87.8750721,2001.44898 87.8750721,2004.99998 C87.8750721,2006.88998 88.7692896,2008.57398 90.1636971,2009.67298 C87.1074334,2010.79798 84.7871636,2013.27698 84.044024,2016.63598 C83.7745338,2017.85698 84.7789973,2018.99998 86.0539717,2018.99998 L101.945727,2018.99998 C103.221722,2018.99998 104.226185,2017.85698 103.955674,2016.63598" id="profile_round-[#1342]"> </path> </g> </g> </g> </g></svg>
+              </div>
+          </div>
+        </div>
+        <div class="middle flex">
+            <div class="part flex column" style="border-bottom: 2px solid gray;">
+              <h1>Galaxy Book2 Pro Series</h1>
+              <p style="margin-top: 1%;">Pre-order now for bonus gifts when you complete your purchase.*</p>
+              <h3 style="margin-top: 0.5%;">Valid from Mar 17.2022 &tilde; Mar 31.2022</h3>
+              <button>Pre-order now</button>
+            </div>
+            <div class="part background1 flex column" style="text-align: center; padding: 5%; box-sizing: border-box">
+                <h2 style="color: white;">Galaxy Book2 Pro|Book2 Pro</h2>
+                <div class="item2"></div>
+                <div class="item2 flex">
+               <div class="item">
+                  <img src="./1-Dynamic1_Silver.webp" alt="Multiport Adapter">
+               </div>
+               <div class="plus">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12H20M12 4V20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+               </div>
+               <div class="item">
+                  <img src="./samsung-galaxy-earbuds-pro-4-nepal.jpg" alt="galaxy buds pro">
+               </div>
+             </div>
+            </div>
+        </div>
+        <div class="edge">
+           <ol style="display: flex; justify-content: space-around;" >
+            <li>Bonus Gifts With Pre-Order Purchase</li>
+            <li>Bonus Samsung Care+Plan</li>
+            <li>Get a 100$ Credit Towards A Galaxy Book2 Series Laptop</li>
+            <li>Get Up To 500 AIR Miles &cir;Bonus Miles</li>
+           </ol>
+        </div>
+    </div>
+</body>
+</html>
